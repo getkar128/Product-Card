@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    overflow-wrap: break-word;
+    text-align: left;
+    line-height: 1.9rem;
+    font-weight: 700;
+}
+
+a:visited {
+    color: white;
+}
+
+button:hover {
+    background-color: hsl(158, 86%, 9%);
+    cursor: pointer;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.tag {
+    letter-spacing: 0.3rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    text-align:left;
+    color: hsl(228, 12%, 48%);
+}
+
+.discount-price {
+    color: hsl(228, 12%, 48%);
+    padding-left: 1rem;
+    align-self: center;
+    font-size: 14px;
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+    padding-top: 1.3rem;
+    display: flex;
+    padding-bottom: 1.5rem;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    border: none;
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+ }
+
+
+@media (max-width: 600px){
+
+    .desktop-image {
+        display: none;
+    }
+
+    body {
+        padding-top: 2rem;
+    }
+
+    .container {
+        width: 21rem;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 1rem;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+
+    .detail__section {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .tag {
+        letter-spacing: 0.15rem;
+        padding-top: 1rem;
+    }
+
+    .description {
+        padding-top: 1.3rem;
+        line-height: 1.5rem;
+        color: hsl(228, 12%, 48%);
+        font-size: 0.9rem;
+    }
+
+    button {
+        width: 19rem;
+        height: 3rem;
+        border-radius: 5px;
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+}
+
+
+@media (min-width: 600px) {
+
+    body {
+        justify-content: center;
+    }
+
+    .mobile-image {
+        display: none;
+    }
+         
+    img {
+        width: 106%;
+        height: auto;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+    }
+    
+    .container {
+        width: 33rem;
+        height: 25em;
+        display: flex;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 1rem;
+    }
+    
+    .container >* {
+        flex-basis: 100%;
+    }
+    
+    .detail__section {
+        padding-right: 1rem;
+        padding-left: 2rem;
+    }
+        
+    .description {
+        padding-top: 1.3rem;
+        line-height: 1.4rem;
+        color: hsl(228, 12%, 48%);
+    }
+    
+    .discount-price {
+        color: hsl(228, 12%, 48%);
+        padding-left: 1rem;
+        align-self: center;
+        font-size: 14px;
+    }
+    
+    button {
+        width: 14.3rem;
+        height: 2.5rem;
+        border-radius: 5px;
+    }
+    
+}
+
